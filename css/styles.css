@@ -1,1 +1,35 @@
 /* developer styles go here */
+
+/* Do the generic CSS for the smallest screen first - this will be applied to all screens */
+body {
+    /* add the default base font properties */
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+}
+
+header,
+footer {
+    background-color: #115194;
+    margin-bottom: 48px;
+}
+
+h1 {
+    padding: 48px;
+}
+
+nav {
+    background-color: gray;
+    padding: 16px;
+}
+.banner {
+    background-color:slategrey;
+    padding: 288px 0;
+    margin-bottom: 24px;
+}
+.promo {
+    background-color: palegreen;
+    padding: 128px 0;
+}
