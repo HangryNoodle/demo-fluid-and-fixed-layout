@@ -10,6 +10,16 @@ body {
     color: white;
 }
 
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
 header,
 footer {
     background-color: #115194;
@@ -32,4 +42,26 @@ nav {
 .promo {
     background-color: palegreen;
     padding: 128px 0;
+    /* one key item for resposive web design is % based containers */
+    /* width: calc(100%/3); */
+    width: 32%;
 }
+
+/* fluid layouts are great for mobile devices but on desktops we'll switch to a fixed container */
+@media screen and (min-width:1300px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .container {
+        width: 1700px;
+    }
+}
+
+/* Three key things for Responsive Web Design (RWD)
+1. fluid containers (up to a point)
+2. media queries
+3. flexible images */
